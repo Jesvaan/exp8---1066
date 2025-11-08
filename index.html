@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Event Management System</title>
+  <style>
+    body { font-family: Arial; margin: 2em; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+    th, td { border: 1px solid #aaa; padding: .5em .7em; }
+    th { background: #eee; }
+    input, textarea { margin-bottom: .5em; }
+    button { margin: 0 .5em; }
+  </style>
+</head>
+<body>
+  <h1>College Event Management System</h1>
+
+  <h2>Add New Event</h2>
+  <form id="eventForm">
+    <input type="text" id="name" placeholder="Event Name" required><br>
+    <input type="date" id="date" required><br>
+    <input type="text" id="location" placeholder="Location" required><br>
+    <textarea id="description" placeholder="Description"></textarea><br>
+    <button type="submit">Add Event</button>
+  </form>
+
+  <h2>Event List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="eventTableBody">
+      <!-- Events will appear here -->
+    </tbody>
+  </table>
+  <style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    color: #273773;
+    margin: 1.5em 1em 0.5em 1em;
+    font-size: 2.3em;
+  }
+  h2 {
+    color: #222f4b;
+    margin-left: 1em;
+  }
+  form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(39,55,115,0.07);
+    padding: 1.5em 2em;
+    margin: 1em 1em 2em 1em;
+    display: inline-block;
+    min-width: 280px;
+  }
+  form input, form textarea {
+    width: 98%;
+    padding: 0.6em;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s;
+  }
+  form input:focus, form textarea:focus {
+    border-color: #4763bf;
+    outline: none;
+  }
+  form button {
+    background: #4763bf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7em 1.4em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  form button:hover {
+    background: #273773;
+  }
+  table {
+    width: 98%;
+    margin: 0 1em 2em 1em;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(39,55,115,0.06);
+  }
+  th, td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 0.95em 1em;
+    text-align: left;
+  }
+  th {
+    background: #f1f4fa;
+    color: #222f4b;
+    font-weight: 600;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+  tbody tr {
+    transition: background 0.15s;
+  }
+  tbody tr:hover {
+    background: #f8f9fe;
+  }
+  button {
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: none;
+    background: #e06060;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  button:hover {
+    background: #c44848;
+  }
+</style>
+
+  <script src="main.js"></script>
+</body>
+</html>
